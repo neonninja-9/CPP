@@ -1,5 +1,5 @@
 // find max sum of subarray of an given array using kaden's algorithm
-//  kadan's algo ; -"If the current sum becomes negative after including the current element, reset the current sum to the current element. This signifies starting a new subarray at the current index."
+//  Kadane's Algorithm; -"If the current sum becomes negative after including the current element, reset the current sum to the current element. This signifies starting a new subarray at the current index."
 
 #include <iostream>
 
