@@ -1,1 +1,32 @@
 super keyword uses 
+
+#include <iostream>
+using namespace std;
+
+// Base class
+class Base {
+public:
+    void display() {
+        cout << "Base class display function" << endl;
+    }
+};
+
+// Derived class
+class Derived : public Base {
+public:
+    void display() {
+        cout << "Derived class display function" << endl;
+    }
+
+    void show() {
+        // Calling the base class display method using scope resolution operator
+        Base::display();
+    }
+};
+
+int main() {
+    Derived obj;
+    obj.display(); // Calls Derived class display method
+    obj.show();    // Calls Base class display method through Derived class method
+    return 0;
+}
